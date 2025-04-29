@@ -1,0 +1,19 @@
+<div class="card">
+  <img 
+  class="card__image" 
+  alt="<%= product.name %>" 
+  src="https://placehold.co/600x200?text=<%= encodeURIComponent(product.name) %>"
+/>
+
+
+  <h3 class="card__title"><%= product.name %></h3>
+  <p class="card__description"><%= product.description %></p>
+  <p class="card__price"><%= product.price %> PLN</p>
+
+  <a href="/products/<%= product.name %>">View</a>
+  <button 
+    class="delete-button" 
+    data-name="<%= product.name %>">
+    Delete
+  </button>
+</div>
